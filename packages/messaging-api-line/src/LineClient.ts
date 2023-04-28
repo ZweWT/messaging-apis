@@ -763,7 +763,7 @@ export default class LineClient {
       originalContentUrl: string;
       previewImageUrl?: string;
     },
-    options: LineTypes.MessageOptions
+    options?: LineTypes.MessageOptions
   ): Promise<LineTypes.MutationSuccessResponse> {
     return this.push(to, [Line.createImage(image, options)]);
   }
